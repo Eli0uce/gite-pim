@@ -7,11 +7,13 @@
 Mise en œuvre de la base du code et des outils nécessaires à la réalisation du site.
 Réaliser l’intégration des différentes interfaces à l’aide d’outils recommandés dans la liste ci-dessous.
 Pour les requêtes en CRUD accéder à une API en JSON permettant l’intégration de formulaire en AJAX.
-Sécuriser les formulaires et s’assurer de la qualité du code afin de contrer les failles.```
+Sécuriser les formulaires et s’assurer de la qualité du code afin de contrer les failles.
+```
 ### Technologies :
 ```JavaScript | jQuery
 CSS | BOOTSTRAP
-HTML```
+HTML
+```
 
 - La maquette du site exportée au format JPG dans le repository GitHub. 
 - Une photo du tableau de bord Kanban créé sur le tableau à votre disposition contenant le découpage par User Story ainsi que leurs sous tâches (Post-it). 
