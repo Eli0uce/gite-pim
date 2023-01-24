@@ -1,5 +1,23 @@
 # Gîte Pim
 
+## Contexte du projet
+Le gîte Pim situé sur l’île de Pam près de Poum veut refaire son site internet.
+Le directeur Monsieur Yo souhaite rendre le site plus utile pour leurs visiteurs en ajoutant un module avancé de réservation pour les chambres et les différents services que propose le gîte.
+Le directeur souhaite aussi rendre ce nouveau site internet accessible sur mobile car beaucoup de leurs clients se retrouvent à réserver les activités pendant leur séjour.
+Une tablette sera aussi mise à disposition à l’intérieur des chambres pour informer et permettre la réservation des services à n’importe quelle heure de la journée.
+Monsieur Yo souhaite conserver le rôle premier du site qui est d’informer et de présenter le gîte au travers de photo et texte pouvant être vus sur les moteurs de recherche et réseaux sociaux.
+Le site permettra la réservation des chambres, des tables du restaurant, des vélos, des paddles et des sorties plongées.
+Le site devra être capable de prendre précisément les informations utiles à la bonne gestion et organisation du matériel (âge, taille, heure, jour, etc..).
+L’orchestration de ces réservations doit surtout permettre de gérer la disponibilité en temps réel des services pour éviter les doublons.
+Monsieur Yo reste disponible pour toute information complémentaire.
+
+## Modalités pédagogiques
+Réalisez en groupe de 3 un site internet en répondant à la demande client ci-dessous.
+Vous devez concevoir les maquettes afin de vous aider à planifier au mieux les tâches à réaliser.
+Vous devez élire un chef de projet puis lister les tâches à réaliser lors de la phase initiale de gestion de projet.
+Vous devez répartir les tâches afin d’optimiser votre temps de développement et la mise en œuvre du projet.
+Une fois les différentes pages intégrées vous sécuriserez les formulaires et auditerez l’ensemble du code réalisé pour prévenir les failles.
+
 ## Modalités d'évaluation
 ### Opérations :
 ```Réaliser les maquettes à partir de l’analyse des besoins extrait de la demande client.
