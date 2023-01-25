@@ -44,3 +44,8 @@ HTML
 - Le code doit être testé et vérifié pour pallier les failles de sécurité connues du web, guide OWASP. 
 - Le code doit être optimisé pour répondre aux normes d’accessibilité, guide WCAG. 
 - Le code doit être correctement indenté à l'aide de plugins.
+
+
+### Push sur Github :
+#### Créer une nouvelle branche
+`$ git checkout -b {branch name}`
