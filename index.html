@@ -1,81 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
-      crossorigin="anonymous"
-    />
-    <title>Accueil | Gîte Pim</title>
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-sm navbar-dark bg-success"
-        style="background-color: #e3f2fd"
-      >
-        <div class="container-fluid">
-          <img
-            alt="Bienvenu en Province Nord"
-            title="Bienvenu en Province Nord"
-            class="img"
-            src="logo_nord.PNG"
-            style="width: 60px"
-          />
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Locations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Activités</a>
-              </li>
-              <li class="nav-item">
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  onclick="showReserveRoomBox()"
-                >
-                  Réserver
-                </button>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nous contacter</a>
-              </li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="shortcut icon" href="../img/logo-white.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" crossorigin="anonymous" />
+  <title>Accueil | Gîte Pim</title>
+</head>
+
+<body style="background-color: #ebebeb;">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        <img alt="Bienvenu en Province Nord" title="Bienvenu en Province Nord" class="img" src="img/logo_nord.PNG"
+          style="width: 60px;" />
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#quisommesnous">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#locations">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#activites">Activités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Les réservations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nouscontacter">Nous contacter</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <script src="./scripts/reserveRoom.js"></script>
-                <script
-                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-                  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-                  crossorigin="anonymous"
-                ></script>
-                <script
-                  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-                  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-                  crossorigin="anonymous"
-                ></script>
-                <script
-                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-                  integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-                  crossorigin="anonymous"
-                ></script>
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
-  </body>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- JUMBOTRON -->
+  <div class="mt-4 p-5 rounded" style="background-color: #ebebeb;">
+    <div id="carouselExample" class="carousel slide" style="border-radius: 20px; overflow: hidden;">
+      <div class="carousel-inner">
+        <div class="carousel-item  active">
+          <img src="img/pim1.png" class="d-block w-100" alt="Gîtes PIM">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pim2.png" class="d-block w-100" alt="Gîtes PIM">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pim3.png" class="d-block w-100" alt="Gîtes PIM">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pim4.jpg" class="d-block w-100" alt="Gîtes PIM">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- JUMBOTRON -->
+
+  <div class="container">
+    <section class="card mb-5 container" style="padding: 0;">
+      <div class="card-header" style="font-size: 20px; font-weight: bold;">Qui sommes nous ?</div>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section class="card mb-5 container" style="padding: 0;">
+      <div class="card-header" id="locations" style="font-size: 20px; font-weight: bold;">Locations</div>
+      <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+      </p>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      <div style="padding-left: 10px;"><button type="button" class="btn btn-success">Voir plus</button></div>
+      </p>
+    </section>
+    <section class="card mb-5 container" style="padding: 0;">
+      <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Activités</div>
+      <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+        <div style="padding-left: 10px;"><button type="button" class="btn btn-success">Voir plus</button></div>
+      </p>
+    </section>
+  </div>
+
+  <!-- <footer id="nouscontacter">
+    <img alt="Gîte PIM" title="Gîte PIM" class="img" src="img/logo_nord.PNG" style="width: 60px; border-radius: 1pc;">
+  </footer> -->
+</body>
+
 </html>
