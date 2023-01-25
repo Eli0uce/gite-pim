@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/home.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,6 +19,22 @@
     <title>Accueil | Gîte Pim</title>
   </head>
   <body>
+    <header>
+      <!-- Menu TOP -->
+      <div>
+          <img alt="One Million Lines" title="One Million Lines" class="img" src="images/top-logo.png">
+          <nav class="menu">
+              <label for="toggle"> ☰ </label>
+              <input type="checkbox" id="toggle">
+              <ul class="main_pages">
+                  <li><a href="#who" title="Qui sommes-nous ?">Accueil</a></li>
+                  <li><a href="#get_involved" title="Impliquez-vous">Nos services</a></li>
+                  <li><a href="#get_involved" title="Impliquez-vous">Les réservationss</a></li>
+              </ul>
+          </nav>
+      </div>
+      <!-- Menu TOP -->
+  </header>
     <button type="button" class="btn btn-primary" onclick="showReserveRoomBox()">Réserver</button>
     <script src="./scripts/reserveRoom.js"></script>
     <script
@@ -36,5 +53,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+
   </body>
 </html>
