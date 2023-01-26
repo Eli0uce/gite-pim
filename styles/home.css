@@ -1,3 +1,55 @@
+/* général */
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+footer, nav {
+    background-color: #3c913a;
+}
+
+/* header */
+nav {
+    height: 40%;
+}
+
+nav a {
+    width: 5%;
+}
+
+nav img {
+    width: 100%;
+}
+
+.carousel {
+    height: fit-content;
+}
+
+/* main */
+main a {
+    width: 10%;
+}
+/* FOOTER */
+
+.g-i-t form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+form .g-inp {
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+
+.g-inp textarea {
+    height: 150px;
+}
+
+
 /* -------------------------------- Media 1199 -------------------------------- */
 
 @media only screen and (max-width: 1199px) {
@@ -17,20 +69,8 @@
         background-color: #ebebeb;
     }
 
-    header img {
-        position: relative;
-        border-radius: 1pc;
-    }
 
-    .content {
-        margin: 5%;
-    }
-
-    /* FOOTER */
-    footer {
-        background-color: #3c913a;
-    }
-
+    /* footer */
     .f-item-con {
         padding: 1.5rem 4rem;
         display: grid;
@@ -149,128 +189,6 @@
 
 }
 
-@media only screen and (min-width: 1199px) {
-
-    /* Contenu général */
-
-    label,
-    #toggle {
-        display: none;
-    }
-
-    body {
-        margin: auto;
-        padding: 0;
-        font-family: Helvetica;
-        font-size: 14px;
-        background-color: #ebebeb;
-    }
-
-    header img {
-        position: relative;
-        border-radius: 1pc;
-    }
-
-    /* Footer avec retour vers le haut */
-
-    /* FOOTER */
-    footer {
-        background-color: #3c913a;
-    }
-
-    .f-item-con {
-        padding: 1.5rem 4rem;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-gap: 2rem;
-    }
-
-    footer .app-name {
-        color: white;
-        border-left: 4px solid var(--theme-col);
-        padding-left: 1.5rem;
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-        font-weight: 700;
-    }
-
-    .app-name .app-initial {
-        color: var(--theme-col);
-    }
-
-    footer .app-info p {
-        color: white;
-        padding-left: 1.65rem;
-    }
-
-    footer .footer-title {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        color: white;
-        border-left: 4px solid var(--theme-col);
-        padding-left: 1.5rem;
-        height: fit-content;
-    }
-
-    footer ul {
-        padding-left: 1.75rem;
-        color: white;
-        font-size: 0.875rem
-            /* 14px */
-        ;
-        line-height: 1.25rem;
-        margin-top: .5rem;
-    }
-
-    footer ul li {
-        margin: .25rem 0;
-        cursor: pointer;
-        color: #d4d4d4;
-        width: fit-content;
-    }
-
-    footer ul li:hover {
-        color: white;
-    }
-
-    footer .cr-con {
-        background-color: #357534;
-        color: white;
-        padding: 1rem 4rem;
-        text-align: center;
-    }
-
-    .g-i-t {
-        display: grid;
-        grid-column-start: 3;
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    .g-i-t form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        --tw-space-y-reverse: 0;
-        margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-        margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-    }
-
-    form .g-inp {
-        padding: .25rem .5rem;
-        font-size: 16px;
-    }
-
-    .g-inp textarea {
-        height: 150px;
-    }
-
-    .content {
-        margin: 5%;
-    }
-}
-
-
 /* -------------------------------- Version 919 -------------------------------- */
 
 @media only screen and (max-width: 919px) {
@@ -286,12 +204,6 @@
         font-family: Helvetica;
         font-size: 14px;
         background-color: #ebebeb;
-    }
-
-    header img {
-        position: relative;
-        border-radius: 1pc;
-        height: 16%;
     }
 
     /* Menu du haut */
@@ -311,11 +223,6 @@
         display: flex;
         position: fixed;
         right: 1%;
-    }
-
-    /* FOOTER */
-    footer {
-        background-color: #3c913a;
     }
 
     .f-item-con {
@@ -451,31 +358,11 @@
 
 @media only screen and (max-width: 767px) {
 
-    /* Contenu général */
-
-    body {
-        padding: 0px;
-        margin: 0px;
-        min-height: 100vh;
-        font-size: 14px;
-        background-color: #ebebeb;
-        justify-content: center;
-    }
-
-    .content {
-        margin: 5%;
-    }
-
     /* FOOTER */
-    footer {
-        background-color: #3c913a;
-    }
 
     .f-item-con {
         padding: 1.5rem 4rem;
         display: block;
-        /* grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-gap: 2rem; */
     }
 
     footer .app-name {
