@@ -313,15 +313,141 @@
         right: 1%;
     }
 
-    /* Footer avec retour vers le haut */
-
+    /* FOOTER */
     footer {
         background-color: #3c913a;
-        padding: 1%;
+    }
+
+    .f-item-con {
+        padding: 1.5rem 4rem;
+        display: block;
+        /* grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem; */
+    }
+
+    footer .app-name {
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+    }
+
+    .app-name .app-initial {
+        color: var(--theme-col);
+    }
+
+    footer .app-info p {
+        color: white;
+        padding-left: 1.65rem;
+    }
+
+    footer .footer-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        height: fit-content;
+    }
+
+    footer ul {
+        padding-left: 1.75rem;
+        color: white;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    footer ul li {
+        margin: .25rem 0;
+        cursor: pointer;
+        color: #d4d4d4;
+        width: fit-content;
+    }
+
+    footer ul li:hover {
+        color: white;
+    }
+
+    footer .cr-con {
+        background-color: #357534;
+        color: white;
+        padding: 1rem 4rem;
+        text-align: center;
     }
 }
 
 /* -------------------------------- Version 767 -------------------------------- */
+@media only screen and (min-width: 767px) {
+    /* FOOTER */
+    footer {
+        background-color: #3c913a;
+    }
+
+    .f-item-con {
+        padding: 1.5rem 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+    }
+
+    footer .app-name {
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+    }
+
+    .app-name .app-initial {
+        color: var(--theme-col);
+    }
+
+    footer .app-info p {
+        color: white;
+        padding-left: 1.65rem;
+    }
+
+    footer .footer-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        height: fit-content;
+    }
+
+    footer ul {
+        padding-left: 1.75rem;
+        color: white;
+        font-size: 0.875rem
+            /* 14px */
+        ;
+        line-height: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    footer ul li {
+        margin: .25rem 0;
+        cursor: pointer;
+        color: #d4d4d4;
+        width: fit-content;
+    }
+
+    footer ul li:hover {
+        color: white;
+    }
+
+    footer .cr-con {
+        background-color: #357534;
+        color: white;
+        padding: 1rem 4rem;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -339,6 +465,73 @@
     .content {
         margin: 5%;
     }
+
+    /* FOOTER */
+    footer {
+        background-color: #3c913a;
+    }
+
+    .f-item-con {
+        padding: 1.5rem 4rem;
+        display: block;
+        /* grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem; */
+    }
+
+    footer .app-name {
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+    }
+
+    .app-name .app-initial {
+        color: var(--theme-col);
+    }
+
+    footer .app-info p {
+        color: white;
+        padding-left: 1.65rem;
+    }
+
+    footer .footer-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: white;
+        border-left: 4px solid var(--theme-col);
+        padding-left: 1.5rem;
+        height: fit-content;
+    }
+
+    footer ul {
+        padding-left: 1.75rem;
+        color: white;
+        font-size: 0.875rem
+            /* 14px */
+        ;
+        line-height: 1.25rem;
+        margin-top: .5rem;
+    }
+
+    footer ul li {
+        margin: .25rem 0;
+        cursor: pointer;
+        color: #d4d4d4;
+        width: fit-content;
+    }
+
+    footer ul li:hover {
+        color: white;
+    }
+
+    footer .cr-con {
+        background-color: #357534;
+        color: white;
+        padding: 1rem 4rem;
+        text-align: center;
+    }
 }
 
 /* BACK TO TOP */
@@ -351,4 +544,4 @@
     right: 1%;
     height: 50px;
     width: 50px;
-  }
+}
