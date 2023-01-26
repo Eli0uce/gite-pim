@@ -46,6 +46,12 @@ HTML
 - Le code doit être correctement indenté à l'aide de plugins.
 
 
-### Push sur Github :
+## Push sur Github :
 #### Créer une nouvelle branche
 `$ git checkout -b {branch name}`
+
+#### Push sur la branche
+`$ git add .`
+`$ git commit -m "name of commit"`
+`$ git push`
+puis copier-coller le `git push` fourni dans le terminal.
