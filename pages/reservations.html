@@ -33,54 +33,63 @@
 
   </header>
 
+  <div class="title">
+    <h1 class="text-center mt-5">Nos Réservations</h1>
+    <hr class="w-25 m-auto">
+  </div>
   <div class="container" style="padding-top: 50px;">
     <section class="card mb-5 container" style="padding: 0;">
-      <div class="card-header" style="font-size: 20px; font-weight: bold;">Premier Prix <span
-          style="float: right; font-size: 15px;">5.000 CFP/nuit</span></div>
+      <div class="card-header" style="font-size: 20px; font-weight: bold;">Chambre <span
+          style="float: right; font-size: 15px;">7.500 CFP/nuit</span></div>
           <div class="d-flex justify-content-between">
-            <img src="../img/chambre1.jpeg" class="m-2 rounded" width="300" alt="">
+            <img src="../img/chambre-mer.jpg" class="m-2 rounded" width="300" alt="">
             <div class="card-body">
-              <h3>Chambre Classique</h3>
+              <h3>Vue Mer</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
               dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.</p>
-              <button id="modal-button" class="btn btn-success">Réserver</button>
             </div>
           </div>
     </section>
     <section class="card mb-5 container" style="padding: 0;">
-      <div class="card-header" style="font-size: 20px; font-weight: bold;">Vu sur Jardin <span
-          style="float: right;font-size: 15px;">10.000Xcfp/nuits</span></div>
+      <div class="card-header" style="font-size: 20px; font-weight: bold;">Bungalow <span
+          style="float: right;font-size: 15px;">10.000 CFP/nuit</span></div>
           <div class="d-flex justify-content-between">
-            <img src="../img/chambre2.png" class="m-2 rounded" width="300" alt="">
+            <img src="../img/bungalow-piscine.jpg" class="m-2 rounded" width="300" alt="">
             <div class="card-body">
-              <h3>Chambre Premium</h3>
+              <h3>Vue Piscine</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
               dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.</p>
-              <button id="modal-button" class="btn btn-success">Réserver</button>
             </div>
           </div>
     </section>
     <section class="card mb-5 container" style="padding: 0;">
-      <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Vu sur mer <span
-          style="float: right; font-size: 15px;">15.000Xcfp/nuits</span></div>
+      <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Bungalow <span
+          style="float: right; font-size: 15px;">15.000 CFP/nuit</span></div>
           <div class="d-flex justify-content-between">
-            <img src="../img/chambre3.png" class="m-2 rounded" width="300" alt="">
+            <img src="../img/bungalow-mer.jpg" class="m-2 rounded" width="300" alt="">
             <div class="card-body">
-              <h3>Chambre Deluxe</h3>
+              <h3>Vue Mer</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
               dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.</p>
-              <button id="modal-button" class="btn btn-success">Réserver</button>
             </div>
           </div>
+    </section>
+    <hr class="w-50 m-auto mb-4">
+    <section>
+      <div class="container">
+        <div class="col-md-12 text-center">
+        <button id="modal-button" class="btn btn-success text-uppercase justify-content-center mb-5">Réserver une chambre ou un bungalow</button>
+      </div>
+      </div>
     </section>
   </div>
 
@@ -127,37 +136,53 @@
 
       <div class="modal-header">
         <span class="close" id="closeModal">&times;</span>
-        <h2>Modal form</h2>
+        <h2>Réservations</h2>
       </div>
       <div class="modal-body">
         <form action="" class="modal-form">
           <div class="form-row">
-            <label for="">Name</label>
-            <select class="caregiver-select" name="name" id="namepick">
-                    <option value="" selected disabled>Pick an option</option>
+            <label for="number">Numéro de Chambre</label>
+            <select class="number" name="number" id="number">
+                    <option value="" selected disabled>Choisir une chambre</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
                   </select>
           </div>
           <div class="form-row">
-            <label for="iduser">A thing</label>
-            <select class="user-select" name="user-name" id="user">
-                    <option value="" selected disabled>Pick a thing</option>
+            <label for="type">Type de chambre</label>
+            <select class="type" name="type" id="type">
+                    <option value="" selected disabled>Choisir un type</option>
+                    <option value="chambre">Chambre</option>
+                    <option value="bungalow">Bungalow</option>
                   </select>
           </div>
           <div class="form-row">
-            <label for="">Date</label>
-            <input type="datetime-local">
+            <label for="landscape">Vue</label>
+            <select class="landscape" name="landscape" id="landscape">
+                    <option value="" selected disabled>Choisir une vue</option>
+                    <option value="chambre">Mer</option>
+                    <option value="bungalow">Piscine</option>
+                  </select>
           </div>
           <div class="form-row">
-            <label for="">Start time</label>
-            <input type="time">
+            <label for="dateEntree">Date Arrivée</label>
+            <input type="date" id="dateEntree">
           </div>
           <div class="form-row">
-            <label for="">Event length</label>
-            <input type="text">
+            <label for="dateSortie">Date Départ</label>
+            <input type="date" id="dateSortie">
           </div>
       </div>
       <div class="modal-footer">
-        <input type="submit" class="button good" value="Save">
+        <button class="btn btn-success" onclick="roomReserve()">Réserver ma chambre</button>
       </div>
       </form>
     </div>
