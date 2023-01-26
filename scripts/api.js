@@ -1,38 +1,38 @@
-// CREATE //
-function chambreMerReserve() {
-  const number = document.getElementById("number").value;
-  const type = document.getElementById("type").value;
-  const landscape = document.getElementById("landscape").value;
-  const dateEntree = document.getElementById("dateEntree").value;
-  const dateSortie = document.getElementById("dateSortie").value;
-
-  const xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=list");
-  xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+// get idRoom, dateEntree and dateSortie in html form and post the result in the API with the method POST and the url https://tst.quantiq.nc/devweb-cfa/api/index.php?service=gite&object=roomreservation&action=create with xhttp
+function postReservation() {
+  const modal = document.getElementById("myModal");
+  var idRoom = document.getElementById("idRoom").value;
+  var dateEntree = document.getElementById("dateEntree").value;
+  var dateSortie = document.getElementById("dateSortie").value;
+  console.log(dateEntree, dateSortie);
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send(
-    JSON.stringify({
-      number: number,
-      type: type,
-      landscape: landscape,
-      dateEntree: dateEntree,
-      dateSortie: dateSortie,
-    })
+    "service=" +
+      "gite" +
+      "&object=" +
+      "roomreservation" +
+      "&action=" +
+      "create" +
+      "&token=" +
+      "D@lL@5Mùl!P@5S3" +
+      "&idRoom=" +
+      idRoom +
+      "&dateEntree=" +
+      dateEntree +
+      "&dateSortie=" +
+      dateSortie
   );
   xhttp.onreadystatechange = function () {
-    console.log(this.responseText);
     if (this.readyState == 4 && this.status == 200) {
-      const objects = JSON.parse(this.responseText);
+      modal.style.display = "none";
       Swal.fire({
-        title: "Chambre Réservé",
-        text: "Votre chambre a bien été réservé",
+        title: "Réservation effectuée",
+        text: "Votre réservation a bien été prise en compte",
         icon: "success",
-      });
-      loadTable();
-    } else {
-      Swal.fire({
-        title: "Erreur",
-        text: "Une erreur est survenue",
-        icon: "error",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#3c913a",
       });
     }
   };
