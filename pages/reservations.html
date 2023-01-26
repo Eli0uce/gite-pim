@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/modal.css">
   <link rel="shortcut icon" href="../img/logo-white.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -35,37 +36,51 @@
   <div class="container" style="padding-top: 50px;">
     <section class="card mb-5 container" style="padding: 0;">
       <div class="card-header" style="font-size: 20px; font-weight: bold;">Premier Prix <span
-          style="float: right; font-size: 12px;">5.000Xcfp/nuits</span></div>
-      <p class="card-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <div style="padding-left: 10px;"><button type="button" class="btn btn-success">Réserver</button></div>
-      </p>
+          style="float: right; font-size: 15px;">5.000 CFP/nuit</span></div>
+          <div class="d-flex justify-content-between">
+            <img src="../img/chambre1.jpeg" class="m-2 rounded" width="300" alt="">
+            <div class="card-body">
+              <h3>Chambre Classique</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</p>
+              <button id="modal-button" class="btn btn-success">Réserver</button>
+            </div>
+          </div>
     </section>
     <section class="card mb-5 container" style="padding: 0;">
       <div class="card-header" style="font-size: 20px; font-weight: bold;">Vu sur Jardin <span
-          style="float: right;font-size: 12px;">10.000Xcfp/nuits</span></div>
-      <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-      <div style="padding-left: 10px;"><button type="button" class="btn btn-success">Réserver</button></div>
-      </p>
+          style="float: right;font-size: 15px;">10.000Xcfp/nuits</span></div>
+          <div class="d-flex justify-content-between">
+            <img src="../img/chambre2.png" class="m-2 rounded" width="300" alt="">
+            <div class="card-body">
+              <h3>Chambre Premium</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</p>
+              <button id="modal-button" class="btn btn-success">Réserver</button>
+            </div>
+          </div>
     </section>
     <section class="card mb-5 container" style="padding: 0;">
       <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Vu sur mer <span
-          style="float: right; font-size: 12px;">15.000Xcfp/nuits</span></div>
-      <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum.
-      <div style="padding-left: 10px;"><button type="button" class="btn btn-success">Réserver</button></div>
-      </p>
+          style="float: right; font-size: 15px;">15.000Xcfp/nuits</span></div>
+          <div class="d-flex justify-content-between">
+            <img src="../img/chambre3.png" class="m-2 rounded" width="300" alt="">
+            <div class="card-body">
+              <h3>Chambre Deluxe</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</p>
+              <button id="modal-button" class="btn btn-success">Réserver</button>
+            </div>
+          </div>
     </section>
   </div>
 
@@ -106,8 +121,51 @@
       <i class="fa-solid fa-chevron-up fa-inverse"></i>
     </button>
   </div>
+  <!-- MODAL -->
+  <div id="myModal" class="modal">
+    <div class="modal-content slideDown">
+
+      <div class="modal-header">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Modal form</h2>
+      </div>
+      <div class="modal-body">
+        <form action="" class="modal-form">
+          <div class="form-row">
+            <label for="">Name</label>
+            <select class="caregiver-select" name="name" id="namepick">
+                    <option value="" selected disabled>Pick an option</option>
+                  </select>
+          </div>
+          <div class="form-row">
+            <label for="iduser">A thing</label>
+            <select class="user-select" name="user-name" id="user">
+                    <option value="" selected disabled>Pick a thing</option>
+                  </select>
+          </div>
+          <div class="form-row">
+            <label for="">Date</label>
+            <input type="datetime-local">
+          </div>
+          <div class="form-row">
+            <label for="">Start time</label>
+            <input type="time">
+          </div>
+          <div class="form-row">
+            <label for="">Event length</label>
+            <input type="text">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="button good" value="Save">
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
   <!-- SCRIPTS -->
   <script src="../scripts/script.js"></script>
+  <script src="../scripts/modal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
