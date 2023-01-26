@@ -13,12 +13,12 @@ nav {
     height: 40%;
 }
 
-nav a {
-    width: 5%;
+nav img {
+    width: 3em;
 }
 
-nav img {
-    width: 100%;
+nav span {
+    font-size: larger;
 }
 
 .carousel {
@@ -27,9 +27,13 @@ nav img {
 
 /* main */
 main a {
-    width: 10%;
+    width: 10em;
 }
+
 /* FOOTER */
+.carte {
+    background-color: #3c913a;
+}
 
 .g-i-t form {
     display: flex;
