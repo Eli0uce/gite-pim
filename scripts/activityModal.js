@@ -1,14 +1,14 @@
 // get the elements
-const modal = document.getElementById("myModal");
+const activityModal = document.getElementById("activityModal");
 const button = document.getElementById("modal-button");
 const close = document.querySelectorAll(".close")[0];
 const clickable = document.querySelectorAll(".clickable");
 
 const openModal = function () {
-  modal.style.display = "block";
+  activityModal.style.display = "block";
 };
 const closeModal = function () {
-  modal.style.display = "none";
+  activityModal.style.display = "none";
 };
 // event listeners
 button.addEventListener("click", openModal, false);
@@ -18,7 +18,7 @@ for (let i = 0; i < clickable.length; i++) {
 }
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == activityModal) {
+    activityModal.style.display = "none";
   }
 };
