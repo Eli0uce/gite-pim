@@ -132,6 +132,10 @@ footer ul li {
     width: 300px;
 }
 
+li {
+    text-align: left;
+}
+
 /* BACK TO TOP */
 .btt {
     position: fixed;
@@ -142,15 +146,6 @@ footer ul li {
     right: 1%;
     height: 50px;
     width: 50px;
-}
-
-/* -------------------------------- Media 1199 -------------------------------- */
-
-@media only screen and (max-width: 1199px) {
-    /* footer */
-
-
-    
 }
 
 /* -------------------------------- Version 767 -------------------------------- */
