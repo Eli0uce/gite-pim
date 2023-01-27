@@ -86,7 +86,7 @@
   align-items: center;
 }
 
-.modal-footer > input {
+.modal-footer>input {
   margin-top: 0.8rem;
   margin-bottom: 0rem;
   margin-left: 0rem;
@@ -136,23 +136,44 @@
   -webkit-animation-timing-function: ease;
   visibility: visible !important;
 }
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
   }
+
   50% {
     transform: translateY(4%);
   }
+
   65% {
     transform: translateY(-2%);
   }
+
   80% {
     transform: translateY(2%);
   }
+
   95% {
     transform: translateY(-1%);
   }
+
   100% {
     transform: translateY(0%);
   }
+}
+
+@media only screen and (max-width: 790px) {
+
+  .modal-content {
+    display: table-cell!important;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .modal-content {
+    display: table-cell!important;
+    }
 }
