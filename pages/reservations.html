@@ -11,136 +11,131 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" crossorigin="anonymous" />
+  
   <title>Réservations | Gîte Pim</title>
 </head>
 
-<body style="background-color: #ebebeb;">
-  <header>
+<body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #3c913a;">
-      <div class="container-fluid"><img src="../img/logo-white.png" style="width: 100px; background-color: #3c913a;">
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+  <header>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/logo-white.png" alt="Gîte PIM" title="Gîte PIM"><span class="text-uppercase fw-bold">Gîte Pim</span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav text-uppercase">
             <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Locations</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Activités</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/reservations.html">Réservations</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/services.html#activites">Activités</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/reservations.html">Réservations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
   </header>
 
-  <div class="title">
-    <h1 class="text-center mt-5 pt-5">Nos hébergements</h1>
-    <hr class="w-25 m-auto mb-2">
-  </div>
-
-  <div class="container" style="padding-top: 50px;">
-    <section class="card mb-5 container" style="padding: 0;">
-      <div class="card-header" style="font-size: 20px; font-weight: bold;">Chambre <span
-          style="float: right; font-size: 15px;">7.500 CFP/nuit</span></div>
-          <div class="d-flex justify-content-between">
-            <img src="../img/chambre-mer.jpg" class="m-2 rounded" width="300" alt="">
-            <div class="card-body">
-              <h3>Vue Mer</h3>
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <p>
-                      - 1 lit double<br>
-                      - 1 lit simple<br>
-                      - 1 salle de bain<br>
-                      - 1 climatiseur
-                    </p>
-                  </div>
-                  <div class="col-sm">
-                    <p>
-                      - 1 télévision
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    <section class="card mb-5 container" style="padding: 0;">
-      <div class="card-header" style="font-size: 20px; font-weight: bold;">Bungalow <span
-          style="float: right;font-size: 15px;">10.000 CFP/nuit</span></div>
-          <div class="d-flex justify-content-between">
-            <img src="../img/bungalow-piscine.jpg" class="m-2 rounded" width="300" alt="">
-            <div class="card-body">
-              <h3>Vue Piscine</h3>
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <p>
-                      - 1 lit double<br>
-                      - 1 salle de bain<br>
-                      - 1 terrasse<br>
-                      - 1 climatiseur
-                    </p>
-                  </div>
-                  <div class="col-sm">
-                    <p>
-                      - 1 cuisine<br>
-                      - 1 télévision
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    <section class="card mb- container" style="padding: 0;">
-      <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Bungalow <span
-          style="float: right; font-size: 15px;">15.000 CFP/nuit</span></div>
-          <div class="d-flex justify-content-between">
-            <img src="../img/bungalow-mer.jpg" class="m-2 rounded" width="300" alt="">
-            <div class="card-body">
-              <h3>Vue Mer</h3>
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <p>
-                      - 1 lit double<br>
-                      - 1 lit simple<br>
-                      - 1 salle de bain<br>
-                      - 1 terrasse
-                    </p>
-                  </div>
-                  <div class="col-sm">
-                    <p>
-                      - 1 climatiseur<br>
-                      - 1 cuisine<br>
-                      - 1 télévision<br>
-                      - 1 mini-bar
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="container mt-5">
-        <div class="col-md-12 text-center">
-          <hr class="w-50 m-auto mb-4">
-          <button id="modal-button" class="btn btn-success text-uppercase ml-auto mb-5">Réserver une chambre ou un bungalow</button>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- CARTE -->
-  <section class="mt-5 carte">
-    <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18197.66651816965!2d164.0395000961899!3d-20.233416869922145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2snl!4v1674681286206!5m2!1sfr!2snl" height="400" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <main>
+    <!-- Titre -->
+    <div class="title">
+      <h1 class="text-center mt-5 pt-5">Nos hébergements</h1>
+      <hr class="w-25 m-auto mb-2">
     </div>
-  </section>
+
+    <!-- Chambre -->
+    <div class="container" style="padding-top: 50px;">
+      <section class="card mb-5 container" style="padding: 0;">
+        <div class="card-header" style="font-size: 20px; font-weight: bold;">Chambre <span
+            style="float: right; font-size: 15px;">7.500 CFP/nuit</span>
+        </div>
+        <div class="container justify-content-between">
+          <div class="row justify-content-between p-3">
+            <img src="../img/chambre-mer.jpg" class="m-2 rounded" alt="chambre vu mer">
+            <div class="card-body col-sm-3 text-center">
+              <h3>Vue Mer</h3>
+              <ul>
+                <li>1 lit double</li>
+                <li>1 lit simple</li>
+                <li>1 salle de bain</li>
+                <li>1 climatiseur</li>
+                <li>1 télévision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bungalow vu piscine -->
+      <section class="card mb-5 container" style="padding: 0;">
+        <div class="card-header" style="font-size: 20px; font-weight: bold;">Bungalow <span
+            style="float: right;font-size: 15px;">10.000 CFP/nuit</span>
+        </div>
+        <div class="container justify-content-between">
+          <div class="row justify-content-between p-3">
+            <img src="../img/bungalow-piscine.jpg" class="m-2 rounded" alt="Bungalow vu piscine">
+            <div class="card-body col-sm-3 text-center">
+              <h3>Vue Piscine</h3>
+                <ul>
+                  <li>1 lit double</li>
+                  <li>1 salle de bain</li>
+                  <li>1 terrasse</li>
+                  <li>1 climatiseur</li>
+                  <li>1 cuisine</li>
+                  <li>1 télévision</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bungalow vu mer -->
+      <section class="card mb- container" style="padding: 0;">
+        <div class="card-header" id="activites" style="font-size: 20px; font-weight: bold;">Bungalow <span
+            style="float: right; font-size: 15px;">15.000 CFP/nuit</span>
+        </div>
+        <div class="container justify-content-between">
+          <div class="row justify-content-between p-3">
+            <img src="../img/bungalow-mer.jpg" class="col-sm-3 m-2 rounded" alt="Bungalow vu mer">
+            <div class="card-body col-sm-3 text-center">
+              <h3 class="text-uppercase">Vue Mer</h3>
+              <ul>
+                <li>1 lit double</li>
+                <li>1 lit simple</li>
+                <li>1 salle de bain</li>
+                <li>1 terrasse</li>
+                <li>1 climatiseur</li>
+                <li>1 cuisine</li>
+                <li>1 télévision</li>
+                <li>1 mini-bar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="col-md-12 text-center">
+            <hr class="w-50 m-auto mb-4">
+            <button id="modal-button" class="btn btn-success text-uppercase ml-auto mb-5">Réserver une chambre ou un bungalow</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <!-- CARTE -->
+    <section class="mt-5 carte">
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18197.66651816965!2d164.0395000961899!3d-20.233416869922145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2snl!4v1674681286206!5m2!1sfr!2snl" 
+        height="400" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
   <!-- FOOTER -->
-  <footer>
+  <footer id="contact">
     <div class="f-item-con">
       <div class="app-info">
         <span class='app-name'>
@@ -171,12 +166,14 @@
     </div>
     <div class='cr-con'>Copyright &copy; 2023 | Made by Golden Leaders</div>
   </footer>
+
   <!-- Arrow up to Top -->
   <div id="back-to-top">
     <button class="btt border-0 rounded-circle bg-dark" onclick="topFunction()" id="btt">
       <i class="fa-solid fa-chevron-up fa-inverse"></i>
     </button>
   </div>
+
   <!-- MODAL -->
   <div id="myModal" class="modal">
     <div class="modal-content slideDown">
@@ -189,8 +186,8 @@
           <div class="form-row">
             <label for="idRoom">Numéro de Chambre</label>
             <select class="idRoom" name="idRoom" id="idRoom">
-                    <option value="" selected disabled>Choisir une chambre</option>
-                  </select>
+              <option value="" selected disabled>Choisir une chambre</option>
+            </select>
           </div>
           <div class="form-row">
             <label for="dateEntree">Date Arrivée</label>
@@ -206,20 +203,20 @@
       </div>
     </div>
   </div>
-  </div>
+  
   <!-- SCRIPTS -->
   <script src="../scripts/script.js"></script>
   <script src="../scripts/modal.js"></script>
   <script src="../scripts/api.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
 </body>
 
