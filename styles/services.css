@@ -1,5 +1,22 @@
+footer, nav {
+  background-color: #3c913a;
+}
+
+/* header */
+nav {
+  height: 40%;
+}
+
+nav img {
+  width: 3em;
+}
+
+nav span {
+  font-size: larger;
+}
+
 .services {
-  padding: 100px 0;
+  padding: 75px 0;
   background-color: #ebebeb;
 }
 
@@ -62,6 +79,16 @@
 
 .carte {
   background-color: #3c913a;
+}
+
+/* TABLE */
+.table-responsive {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+td {
+  line-height: 3rem;
 }
 
 /* FOOTER */

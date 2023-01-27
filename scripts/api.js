@@ -119,8 +119,7 @@ function postActiviteReservation() {
         title: "Réservation effectuée",
         text: "Votre réservation a bien été prise en compte",
         icon: "success",
-        confirmButtonText: "OK",
-        confirmButtonColor: "#3c913a",
+        timer: 2500,
       });
     }
   };
