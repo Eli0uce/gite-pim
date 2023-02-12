@@ -1,7 +1,7 @@
 getActivites();
 
-// variable id
-idResa = ''
+// variables
+idResa =''
 
 function getActivites() {
   var xhttp = new XMLHttpRequest();
@@ -25,7 +25,7 @@ function getActivites() {
         date.classList.add("center-content");
         var deleteButton = document.createElement("td");
         deleteButton.innerHTML =
-          '<button class="btn btn-danger" onclick="deleteRaw()">Supprimer</button>';
+          '<button class="btn btn-danger" id='+activites[i].id +' onclick="deleteRaw(event)">Supprimer</button>';
         deleteButton.classList.add("center-content");
         row.appendChild(activite);
         row.appendChild(date);
@@ -36,7 +36,9 @@ function getActivites() {
   };
 }
 
-function deleteRaw() {
+function deleteRaw(event) {
+  getId = event.target;
+  idResa = getId.id
   Swal.fire({
     title: "Êtes-vous sûr?",
     text: "Vous ne pourrez pas revenir en arrière!",
@@ -74,7 +76,7 @@ function deleteInAPI() {
       "&token=" +
       "D@lL@5Mùl!P@5S3" +
       "&idActivityReservation=" +
-      idActivityReservation
+      idResa
   );
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
