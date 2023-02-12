@@ -61,7 +61,7 @@ function deleteRaw(event) {
   });
 }
 
-// function to delete in API
+// function to delete resa activité
 function deleteInAPI() {
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php", true);
