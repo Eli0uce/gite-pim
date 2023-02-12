@@ -1,3 +1,8 @@
+getActivites();
+
+// variable id
+idResa = ''
+
 function getActivites() {
   var xhttp = new XMLHttpRequest();
   xhttp.open(
@@ -30,7 +35,6 @@ function getActivites() {
     }
   };
 }
-getActivites();
 
 function deleteRaw() {
   Swal.fire({
