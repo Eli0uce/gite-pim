@@ -104,6 +104,7 @@
         <p class="card-body">Des locations au meilleur prix. A ne pas rater !
         </p>
         <p class="card-body">
+
           <a href="./pages/services.html#locations" type="button" class="btn btn-success m-2">Voir plus</a>
         </p>
       </section>
@@ -172,40 +173,6 @@
     <button class="btt border-0 rounded-circle bg-dark" onclick="topFunction()" id="btt">
       <i class="fa-solid fa-chevron-up fa-inverse"></i>
     </button>
-  </div>
-  <!-- MODAL -->
-  <div id="activityModal" class="modal">
-    <div class="modal-content slideDown">
-
-      <div class="modal-header">
-        <span class="close" id="closeModal">&times;</span>
-        <h2>Réservations</h2>
-      </div>
-      <div class="modal-body">
-        <div class="form-row">
-          <label for="activite">Activités</label>
-          <select class="activite" name="activite" id="activite">
-            <option value="" selected disabled>Choisir une activité</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="date">Date</label>
-          <input type="date" id="date">
-        </div>
-        <div class="form-row">
-          <label for="heureDebut">Heure de Début</label>
-          <input type="time" step="1" id="heureDebut">
-        </div>
-        <div class="form-row">
-          <label for="heureFin">Heure de Fin</label>
-          <input type="time" step="1" id="heureFin">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-success" onclick="postActiviteReservation()">Réserver</button>
-      </div>
-    </div>
-  </div>
   </div>
   <!-- SCRIPTS -->
   <script src="../scripts/script.js"></script>
