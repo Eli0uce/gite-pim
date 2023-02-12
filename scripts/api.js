@@ -1,3 +1,8 @@
+// call function
+getRooms();
+getActivites();
+
+// get room for resa
 function getRooms() {
   var xhttp = new XMLHttpRequest();
   xhttp.open(
@@ -19,8 +24,8 @@ function getRooms() {
     }
   };
 }
-getRooms();
 
+// reservation chambre
 function postReservation() {
   const modal = document.getElementById("myModal");
   var idRoom = document.getElementById("idRoom").value;
@@ -60,6 +65,7 @@ function postReservation() {
   };
 }
 
+// get activities for resa
 function getActivites() {
   var xhttp = new XMLHttpRequest();
   xhttp.open(
@@ -81,7 +87,6 @@ function getActivites() {
     }
   };
 }
-getActivites();
 
 // Reservation Activite
 function postActiviteReservation() {
