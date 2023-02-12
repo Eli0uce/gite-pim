@@ -4,11 +4,6 @@ body {
     font-size: 14px;
 }
 
-/* Tableau de suppression des reservations */
-tr td{
-    width: 40%;
-}
-
 footer, nav {
     background-color: #3c913a;
 }
@@ -33,6 +28,11 @@ nav span {
 /* main */
 main a {
     width: 10em;
+}
+
+/* Tableau de suppression des reservations */
+tr td{
+    width: 40%;
 }
 
 /* FOOTER */
