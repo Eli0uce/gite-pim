@@ -34,7 +34,7 @@ function getActivites() {
         // bouton Del
         var deleteButton = document.createElement("td");
         deleteButton.innerHTML =
-          '<button class="btn btn-danger" id='+activites[i].id +' onclick="deleteRaw(event)">Supprimer</button>';
+          '<button class="btn btn-danger" id='+activites[i].id +' onclick="deleteRawActivity(event)">Supprimer</button>';
         deleteButton.classList.add("center-content");
 
         rowActivity.appendChild(activite);
@@ -46,7 +46,7 @@ function getActivites() {
   };
 }
 
-function deleteRaw(event) {
+function deleteRawActivity(event) {
   getId = event.target;
   idActivityReservation = getId.id
   Swal.fire({
@@ -66,13 +66,13 @@ function deleteRaw(event) {
         showConfirmButton: false,
         timer: 2000,
       });
-      deleteInAPI();
+      deleteActivity();
     }
   });
 }
 
 // function to delete resa activité
-function deleteInAPI() {
+function deleteActivity() {
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -106,7 +106,6 @@ function getRooms() {
   xhttp.send();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(this.response)
       var rooms = JSON.parse(this.responseText);
       var table = document.getElementById("roomTable");
       for (var i = 0; i < rooms.length; i++) {
@@ -140,7 +139,7 @@ function getRooms() {
         // bouton Del
         var deleteButton = document.createElement("td");
         deleteButton.innerHTML =
-          '<button class="btn btn-danger" id='+rooms[i].id +' onclick="deleteRaw(event)">Supprimer</button>';
+          '<button class="btn btn-danger" id='+rooms[i].id +' onclick="deleteRawRoom(event)">Supprimer</button>';
         deleteButton.classList.add("center-content");
 
         rowRoom.appendChild(number);
@@ -155,9 +154,9 @@ function getRooms() {
   };
 }
 
-function deleteRaw(event) {
-  getId = event.target;
-  idActivityReservation = getId.id
+function deleteRawRoom(event) {
+  getIdRoom = event.target;
+  idRoomReservation = getIdRoom.id
   Swal.fire({
     title: "Êtes-vous sûr?",
     text: "Vous ne pourrez pas revenir en arrière!",
@@ -175,13 +174,13 @@ function deleteRaw(event) {
         showConfirmButton: false,
         timer: 2000,
       });
-      deleteInAPI();
+      deleteRoom();
     }
   });
 }
 
-// function to delete resa activité
-function deleteInAPI() {
+// function to delete resa room
+function deleteRoom() {
   var xhttp = new XMLHttpRequest();
   xhttp.open("POST", "https://tst.quantiq.nc/devweb-cfa/api/index.php", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -189,17 +188,17 @@ function deleteInAPI() {
     "service=" +
       "gite" +
       "&object=" +
-      "activityreservation" +
+      "roomreservation" +
       "&action=" +
       "cancel" +
       "&token=" +
       "D@lL@5Mùl!P@5S3" +
-      "&idActivityReservation=" +
-      idActivityReservation
+      "&idRoomReservation=" +
+      idRoomReservation
   );
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      console.log("Deleted");
+      console.log(idRoomReservation);
     }
   };
 }
