@@ -30,10 +30,6 @@ main a {
     width: 10em;
 }
 
-/* Tableau de suppression des reservations */
-tr td{
-    width: 40%;
-}
 
 /* FOOTER */
 .carte {

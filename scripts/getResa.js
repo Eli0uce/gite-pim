@@ -19,7 +19,7 @@ function getActivites() {
       var activites = JSON.parse(this.responseText);
       var table = document.getElementById("table-responsive");
       for (var i = 0; i < activites.length; i++) {
-        var row = document.createElement("tr");
+        var rowActivity = document.createElement("tr");
 
         // activité
         var activite = document.createElement("td");
@@ -36,11 +36,11 @@ function getActivites() {
         deleteButton.innerHTML =
           '<button class="btn btn-danger" id='+activites[i].id +' onclick="deleteRaw(event)">Supprimer</button>';
         deleteButton.classList.add("center-content");
-        
-        row.appendChild(activite);
-        row.appendChild(date);
-        row.appendChild(deleteButton);
-        table.appendChild(row);
+
+        rowActivity.appendChild(activite);
+        rowActivity.appendChild(date);
+        rowActivity.appendChild(deleteButton);
+        table.appendChild(rowActivity);
       }
     }
   };
@@ -110,7 +110,7 @@ function getRooms() {
       var rooms = JSON.parse(this.responseText);
       var table = document.getElementById("roomTable");
       for (var i = 0; i < rooms.length; i++) {
-        var row = document.createElement("tr");
+        var rowRoom = document.createElement("tr");
 
         // numéro de chambre
         var number = document.createElement("td");
@@ -142,13 +142,14 @@ function getRooms() {
         deleteButton.innerHTML =
           '<button class="btn btn-danger" id='+rooms[i].id +' onclick="deleteRaw(event)">Supprimer</button>';
         deleteButton.classList.add("center-content");
-        row.appendChild(number);
-        row.appendChild(room);
-        row.appendChild(landscape);
-        row.appendChild(roomDateIn);
-        row.appendChild(roomDateOut);
-        row.appendChild(deleteButton);
-        table.appendChild(row);
+
+        rowRoom.appendChild(number);
+        rowRoom.appendChild(room);
+        rowRoom.appendChild(landscape);
+        rowRoom.appendChild(roomDateIn);
+        rowRoom.appendChild(roomDateOut);
+        rowRoom.appendChild(deleteButton);
+        table.appendChild(rowRoom);
       }
     }
   };
